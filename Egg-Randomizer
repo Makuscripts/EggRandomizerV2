@@ -1,10 +1,11 @@
--- Combined Loader for RandomizerEgg + Rubis Script
+-- Combined Loader for RandomizerEgg + Updated Rubis Script
 
--- Load both scripts in parallel
+-- Load RandomizerEgg script
 spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Makuscripts/RandomizerEgg/refs/heads/main/RandomizerEgg", true))()
 end)
 
+-- Load updated Rubis script
 spawn(function()
-    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/wtAodJb2IV18mj2y/raw", true))()
+    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/tfDA050PTsbCm6te/raw", true))()
 end)
