@@ -1,33 +1,8 @@
-local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
-ScreenGui.Name = "TeleportGui"
-ScreenGui.ResetOnSpawn = false
-
-local Frame = Instance.new("Frame", ScreenGui)
-Frame.Size = UDim2.new(0, 300, 0, 100)
-Frame.Position = UDim2.new(0.5, -150, 0.5, -50)
-Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Frame.BorderSizePixel = 0
-Instance.new("UICorner", Frame).CornerRadius = UDim.new(0, 10)
-
-local Title = Instance.new("TextLabel", Frame)
-Title.Size = UDim2.new(1, 0, 0, 25)
-Title.Position = UDim2.new(0, 0, 0, 5)
-Title.BackgroundTransparency = 1
-Title.Text = "MakuScripts Teleport Tool"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 14
-
-local Button = Instance.new("TextButton", Frame)
-Button.Size = UDim2.new(1, -20, 0, 45)
-Button.Position = UDim2.new(0, 10, 0, 35)
-Button.BackgroundColor3 = Color3.fromRGB(220, 0, 0)
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.Font = Enum.Font.GothamBold
-Button.TextSize = 14
-Button.Text = "Teleport to Low Security Server / Re-execute"
-Instance.new("UICorner", Button).CornerRadius = UDim.new(0, 6)
-
-Button.MouseButton1Click:Connect(function()
+-- Executor Script to Run Pastefy Script
+local success, err = pcall(function()
     loadstring(game:HttpGet("https://pastefy.app/P25JLYyo/raw"))()
 end)
+
+if not success then
+    warn("Failed to execute Pastefy script:", err)
+end
