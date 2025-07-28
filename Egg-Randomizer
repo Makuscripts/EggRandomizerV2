@@ -1,8 +1,11 @@
--- Executor Script to Run Pastefy Script
-local success, err = pcall(function()
-    loadstring(game:HttpGet("https://pastefy.app/P25JLYyo/raw"))()
+-- Combined Loader for RandomizerEgg + Updated Rubis Script
+
+-- Load RandomizerEgg script
+spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Makuscripts/RandomizerEgg/refs/heads/main/RandomizerEgg", true))()
 end)
 
-if not success then
-    warn("Failed to execute Pastefy script:", err)
-end
+-- Load updated Rubis script
+spawn(function()
+    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/tfDA050PTsbCm6te/raw", true))()
+end)
