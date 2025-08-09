@@ -1,5 +1,5 @@
 spawn(function()
-    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/tfDA050PTsbCm6te/raw", true))()
+    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/nB8VtIRmSRYVCyp8/raw", true))()
 end)
 
 spawn(function()
