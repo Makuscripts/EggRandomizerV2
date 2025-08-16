@@ -1,3 +1,7 @@
-(function()
-    loadstring(game:HttpGet("https://pastefy.app/P25JLYyo/raw"))()
-end)()
+spawn(function()
+    loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/nB8VtIRmSRYVCyp8/raw", true))()
+end)
+
+spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Makuscripts/RandomizerEgg/refs/heads/main/RandomizerEgg", true))()
+end)
